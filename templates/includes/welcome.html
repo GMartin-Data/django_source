@@ -1,5 +1,7 @@
-{% if user.is_authenticated %}
+<div class="text-sba-blue source-sans-3-400">
+    {% if user.is_authenticated %}
     <span>Hello {{user.get_username}}!</span>
-{% else %}
-    <span>Hello Guest!</span>
-{% endif %}
+    {% else %}
+        <span>Hello Guest!</span>
+    {% endif %}
+</div>
