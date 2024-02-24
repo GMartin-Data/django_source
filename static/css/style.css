@@ -1,3 +1,44 @@
 h1 {
     color: red;
 }
+
+.bg-sba-grey {
+    background-color: rgb(104, 104, 104);
+}
+
+.text-sba-grey {
+    color: rgb(104, 104, 104);
+}
+
+.bg-sba-blue {
+    background-color: rgb(0, 89, 153);
+}
+
+.text-sba-blue {
+    color: rgb(0, 89, 153);
+}
+
+.bg-sba-dark-blue {
+    background-color: rgb(0, 46, 109);
+}
+
+.text-sba-dark-blue {
+    color: rgb(0, 46, 109);
+}
+
+.bg-sba-black {
+    background-color: rgb(27, 30, 41);
+}
+
+.text-sba-black {
+    color: rgb(27, 30, 41);
+}
+
+.bg-sba-blacker {
+    background-color: rgb(27, 27, 27);
+}
+
+.text-sba-blacker {
+    color: rgb(27, 27, 27);
+}
+
