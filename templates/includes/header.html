@@ -6,12 +6,11 @@
 
 <header>
     <nav class='hidden md:flex justify-between items-center max-w-6xl mx-auto px-6 h-16 font-semibold text-base bg-slate-300'>
-        <a href="{{home}}">
+        <a href="{{ home }}">
             <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Tailwind's Logo">
         </a>
         <div class="flex gap-x-4 lg:gap-x-12">
-            <a href="{{about}}">{{ Link1 }}</a>
-            <a href="{{contact}}">{{ Link2 }}</a>
+            {% include "includes/navlinks.html" %}
             <a href="">{{ Link3 }}</a>
         </div>
         <a href="">Login &#8594;</a>
@@ -26,8 +25,7 @@
     </div>
     <!-- Menu -->
     <div id="menu" class='hidden flex flex-col absolute top-0 w-full text-center z-20 gap-4 py-5 bg-slate-300'>
-        <a href="{{about}}">{{ Link1 }}</a>
-        <a href="{{contact}}">{{ Link2 }}</a>
+        {% include "includes/navlinks.html" %}
         <a href=''>{{ Link3 }}</a>
         <a href=''>Login &#8594;</a>
     </div>

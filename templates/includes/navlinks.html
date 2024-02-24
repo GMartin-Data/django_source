@@ -1,0 +1,11 @@
+{% if request.path == about %}
+    <a href="{{about}}" class="text-white">{{Link1}}</a>
+{% else %}
+    <a href="{{about}}">{{Link1}}</a>
+{% endif %}
+
+{% if request.path == contact %}
+    <a href="{{contact}}" class="text-white">{{Link2}}</a>
+{% else %}
+    <a href="{{contact}}">{{Link2}}</a>
+{% endif %}
