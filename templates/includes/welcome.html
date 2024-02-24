@@ -1,0 +1,5 @@
+{% if user.is_authenticated %}
+    <span>Hello {{user.get_username}}!</span>
+{% else %}
+    <span>Hello Guest!</span>
+{% endif %}
