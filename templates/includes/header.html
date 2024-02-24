@@ -2,10 +2,13 @@
 
 {% url "about" as about%}
 {% url "contact" as contact %}
+{% url "home" as home %}
 
 <header>
     <nav class='hidden md:flex justify-between items-center max-w-6xl mx-auto px-6 h-16 font-semibold text-base bg-slate-300'>
-        <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Tailwind's Logo">
+        <a href="{{home}}">
+            <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Tailwind's Logo">
+        </a>
         <div class="flex gap-x-4 lg:gap-x-12">
             <a href="{{about}}">{{ Link1 }}</a>
             <a href="{{contact}}">{{ Link2 }}</a>
