@@ -5,32 +5,33 @@
 {% url "home" as home %}
 
 <header>
-    <nav class='hidden md:flex justify-between items-center max-w-6xl mx-auto px-6 h-16 source-sans-3-600 text-sba-dark-blue bg-white'>
-        <a href="{{ home }}">
-            <img class="h-8" src="https://www.sba.gov/themes/custom/sba/src/img/logo-horizontal.svg" alt="SBA's Logo">
-        </a>
-        <div class="flex gap-x-4 lg:gap-x-12">
+    <div class="border border-bg-sba-grey rounded">
+        <nav class='hidden md:flex justify-between items-center max-w-6xl mx-auto px-6 h-16 source-sans-3-600 text-sba-dark-blue bg-white'>
+            <a href="{{ home }}">
+                <img class="h-8" src="https://www.sba.gov/themes/custom/sba/src/img/logo-horizontal.svg" alt="SBA's Logo">
+            </a>
+            <div class="flex gap-x-4 lg:gap-x-12">
+                {% include "includes/navlinks.html" %}
+                <a href="">{{ Link3 }}</a>
+            </div>
+            <a href="">Login &#8594;</a>
+        </nav>
+        <!-- Hamburger -->
+        <div class="md:hidden flex justify-end mx-auto p-6 bg-slate-300">
+            <div id="hamburger" class="w-6 space-y-1 z-30">
+                <div class="h-1 bg-black"></div>
+                <div class="h-1 bg-black"></div>
+                <div class="h-1 bg-black"></div>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div id="menu" class='hidden flex flex-col absolute top-0 w-full text-center z-20 gap-4 py-5 bg-slate-300'>
+            <a href="{{ home }}">
+                <img class="h-8" src="https://www.sba.gov/themes/custom/sba/src/img/logo-horizontal.svg" alt="SBA's Logo">
+            </a>
             {% include "includes/navlinks.html" %}
-            <a href="">{{ Link3 }}</a>
-        </div>
-        <a href="">Login &#8594;</a>
-    </nav>
-    <!-- Hamburger -->
-    <div class="md:hidden flex justify-end mx-auto p-6 bg-slate-300">
-        <div id="hamburger" class="w-6 space-y-1 z-30">
-            <div class="h-1 bg-black"></div>
-            <div class="h-1 bg-black"></div>
-            <div class="h-1 bg-black"></div>
+            <a href=''>{{ Link3 }}</a>
+            <a href=''>Login &#8594;</a>
         </div>
     </div>
-    <!-- Menu -->
-    <div id="menu" class='hidden flex flex-col absolute top-0 w-full text-center z-20 gap-4 py-5 bg-slate-300'>
-        <a href="{{ home }}">
-            <img class="h-8" src="https://www.sba.gov/themes/custom/sba/src/img/logo-horizontal.svg" alt="SBA's Logo">
-        </a>
-        {% include "includes/navlinks.html" %}
-        <a href=''>{{ Link3 }}</a>
-        <a href=''>Login &#8594;</a>
-    </div>
-
 </header>
