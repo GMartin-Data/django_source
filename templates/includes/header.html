@@ -14,7 +14,15 @@
                 {% include "includes/navlinks.html" %}
                 <a href="">{{ Link3 }}</a>
             </div>
-            <a href="">Login &#8594;</a>
+            <div class='flex gap-x-2'>
+                {% if user.is_authenticated %}
+                    <span>Logged as: {{user.get_username}}</span>
+                    <a href="{% url "logout" %}">logout</a>
+                {% else %}
+                    <span>You are not logged</span>
+                    <a href="{% url "login" %}">login &#8594;</a>
+                {% endif %}
+            </div>
         </nav>
         <!-- Hamburger -->
         <div class="md:hidden flex justify-end mx-auto p-6 bg-slate-300">
