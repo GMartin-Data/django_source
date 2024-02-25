@@ -2,10 +2,14 @@
 
 {% block content %}
 
-<ul>
-{% for feat in object_list %}
-    <li>{{feat.name}}</li>
-{% endfor %}
-</ul>
+    <h2>Features</h2>
+    <ul>
+        {% for feat in object_list %}
+            <li>
+                {{ feat.id }} - 
+                <a href="{% url "feat_detail" pk=feat.id %}" class="text-green-500">{{ feat.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 
 {% endblock content %}
