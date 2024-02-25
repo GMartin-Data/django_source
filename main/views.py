@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 
@@ -9,3 +10,7 @@ def about(request):
 
 def contact(request):
     return render(request, 'main/contact.html')
+
+@login_required
+def special_page(request):
+    return render(request, "main/special_page.html")
