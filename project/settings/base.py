@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'main',
     'feats',
     'widget_tweaks',
+    'prediction',
 ]
 
 MIDDLEWARE = [
