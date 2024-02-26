@@ -27,7 +27,7 @@ class Naics(Enum):
     @classmethod
     def choices(cls):
         # Create a list of tuples in the format Django expects for choices: (value, label)
-        return [(member.value, name) for name, member in cls.__members__.items()]
+        return [(member.name, member.value) for member in cls]
 
 
 class RevLineCr(Enum):
@@ -38,7 +38,7 @@ class RevLineCr(Enum):
     @classmethod
     def choices(cls):
         # Create a list of tuples in the format Django expects for choices: (value, label)
-        return [(member.value, name) for name, member in cls.__members__.items()]
+        return [(member.name, member.value) for member in cls]
 
 
 class UrbanRural(Enum):
@@ -49,7 +49,7 @@ class UrbanRural(Enum):
     @classmethod
     def choices(cls):
         # Create a list of tuples in the format Django expects for choices: (value, label)
-        return [(member.value, name) for name, member in cls.__members__.items()]
+        return [(member.name, member.value) for member in cls]
 
 
 class USState(Enum):
@@ -111,7 +111,7 @@ class USState(Enum):
     @classmethod
     def choices(cls):
         # Create a list of tuples in the format Django expects for choices: (value, label)
-        return [(member.value, name) for name, member in cls.__members__.items()]
+        return [(member.name, member.value) for member in cls]
     
 
 class YesNo(Enum):
@@ -121,4 +121,4 @@ class YesNo(Enum):
     @classmethod
     def choices(cls):
         # Create a list of tuples in the format Django expects for choices: (value, label)
-        return [(member.value, name) for name, member in cls.__members__.items()]
+        return [(member.name, member.value) for member in cls]
