@@ -27,7 +27,7 @@
         <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl dark:text-white text-center text-sba-dark-blue ">
                     Bitch better have my money
                 </h1>
-                <form class="space-y-4 md:space-y-6" method="post" action="{% url 'login' %}?next={{ request.GET.next }}">
+                <form class="space-y-4 md:space-y-6" method="post">
                     {% csrf_token %}
                     <div>
                         <label for="state" class="block mb-2 text-sm font-medium dark:text-white text-sba-dark-blue">Select your state : </label>
