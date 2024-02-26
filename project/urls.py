@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('feats/', include('feats.urls')),
-    path('predict/', include('prediction.urls')),
+    path('predict/', include('prediction.urls'))
 ]

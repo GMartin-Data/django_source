@@ -2,6 +2,10 @@ h1 {
     color: red;
 }
 
+h2 {
+    color: rgb(0, 46, 109);
+}
+
 .bg-sba-grey {
     background-color: rgb(104, 104, 104);
 }

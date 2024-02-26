@@ -1,12 +1,16 @@
-from django.urls import path
+from django.urls import path, include
 
 from . import views
+from project import *
 
 
 urlpatterns = [
     path("", views.home, name="home"),
     path("about/", views.about, name="about"),
-    path("contact/", views.contact, name="contact"),
     path("signup/", views.SignupPage.as_view(), name="signup"),
-    path("special/", views.special_page, name="special")
+    path("special/", views.special_page, name="special"),
+    path('predict/', include('prediction.urls'), name="pred"),
+    path('eda/', views.eda, name="eda"),
+    path('model/', views.model, name="model"),
+    path('predict/', views.predict_page, name="predict")
 ]

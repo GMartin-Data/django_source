@@ -18,9 +18,16 @@ def home(request):
 def about(request):
     return render(request, 'main/about.html')
 
-def contact(request):
-    return render(request, 'main/contact.html')
+def eda(request):
+    return render(request, 'main/eda.html')
+
+def model(request):
+    return render(request, 'main/model.html')
 
 @login_required
 def special_page(request):
     return render(request, "main/special_page.html")
+
+@login_required
+def predict_page(request):
+    return render(request, 'main/predict.html')

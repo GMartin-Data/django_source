@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 
-<h1>This is the home page</h1>
-
+<div class="flex justify-center items-center h-screen">
+<img src="{% static 'img/sbalogo.png' %}" class="max-w-md py-7 "/>
+</div>
 {% endblock content %}

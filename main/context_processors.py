@@ -1,7 +1,8 @@
 def global_context(request):
     return {
-        "Link1": "About...",
-        "Link2": "Contact Us!",
-        "Link3": "Prediction",
-        "clicked": "text-white bg-sba-dark-blue rounded",
+        "Link1": "About Us",
+        "Link2": "Data Analysis",
+        "Link3": "Machine Learning",
+        "Link4": "Make Predictions",
+        "clicked": "text-white rounded px-2 bg-gray-800",
     }

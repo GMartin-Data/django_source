@@ -4,8 +4,20 @@
     <a href="{{ about }}">{{ Link1 }}</a>
 {% endif %}
 
-{% if request.path == contact %}
-    <a href="{{ contact }}" class="{{ clicked }}">{{ Link2 }}</a>
+{% if request.path == eda %}
+    <a href="{{ eda }}" class="{{ clicked }}">{{ Link2 }}</a>
 {% else %}
-    <a href="{{ contact }}">{{ Link2 }}</a>
+    <a href="{{ eda }}">{{ Link2 }}</a>
+{% endif %}
+
+{% if request.path == model %}
+    <a href="{{ model }}" class="{{ clicked }}">{{ Link3 }}</a>
+{% else %}
+    <a href="{{ model }}">{{ Link3 }}</a>
+{% endif %}
+
+{% if request.path == predict %}
+    <a href="{{ predict }}" class="{{ clicked }}">{{ Link4 }}</a>
+{% else %}
+    <a href="{{ predict }}">{{ Link4 }}</a>
 {% endif %}

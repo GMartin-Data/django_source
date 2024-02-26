@@ -3,14 +3,16 @@
 {% url "about" as about%}
 {% url "contact" as contact %}
 {% url "home" as home %}
+{% url "eda" as eda %}
+{% url "model" as model %}
+{% url "predict" as predict %}
 
 <header>
     <div class="border border-bg-sba-grey rounded">
-        <nav class='hidden md:flex justify-between items-center max-w-6xl mx-auto px-6 h-16 source-sans-3-600 text-sba-dark-blue bg-white'>
+        <nav class='hidden md:flex justify-between items-center max-w-6xl mx-auto px-6 h-16 source-sans-3-600 text-gray-800 bg-red'>
             {% include "includes/logo_wm.html" %}
             <div class="flex gap-x-4 lg:gap-x-12">
                 {% include "includes/navlinks.html" %}
-                <a href="">{{ Link3 }}</a>
             </div>
             {% include "includes/login_logout.html" %}
         </nav>
@@ -26,7 +28,6 @@
         <div id="menu" class='hidden flex flex-col items-center absolute top-0 w-full z-20 gap-4 py-5 bg-slate-300'>
             {% include "includes/logo_wm.html" %}
             {% include "includes/navlinks.html" %}
-            <a href=''>{{ Link3 }}</a>
             {% include "includes/login_logout.html" %}
         </div>
     </div>

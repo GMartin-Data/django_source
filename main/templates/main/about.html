@@ -2,8 +2,38 @@
 
 {% block content %}
 
-{% include "includes/welcome.html" %}
+{% load static %}
 
-<h1>About this app...</h1>
+<div class="flex flex-col justify-center items-center h-screen">
+    <div>
+<img src="{% static 'img/vrailogo.png' %}" class="max-w-md"/>
+    </div>
+
+<div class="container text-justify w-2/4">
+    <br>
+    <p>The Small Business Administration (SBA) of the United States is a government agency dedicated to supporting and promoting small businesses across the country. Since its establishment in 1953, the SBA has been committed to providing resources, guidance, and programs to help entrepreneurs start, grow, and succeed in their businesses.</p>
+    <br>
+    <h2 class="text-sba-dark-blue">Our Mission</h2>
+    <p>The mission of the SBA is to support the vital force of the American economy by helping small businesses start, grow, and prosper. We believe that small businesses are the engine of innovation, economic growth, and job creation in our country.</p>
+    <br>
+    <h2 class="text-sba-dark-blue">Our Objectives</h2>
+    <ul>
+        <li>Provide access to capital: We work in partnership with private lenders to offer financing to small businesses on favorable terms.</li>
+        <li>Offer support to entrepreneurs: We provide training, mentoring, and counseling programs to help entrepreneurs acquire the skills they need to succeed.</li>
+        <li>Promote equity and inclusion: We are committed to supporting small businesses owned by women, veterans, ethnic minorities, and other underrepresented groups.</li>
+    </ul>
+    <br>
+    <h2 class="text-sba-dark-blue">Our Values</h2>
+    <ul>
+        <li>Commitment to excellence: We strive to provide quality services and maintain the highest standards in everything we do.</li>
+        <li>Integrity and transparency: We are guided by honesty, ethics, and accountability in all our interactions with entrepreneurs and partners.</li>
+        <li>Collaboration and partnership: We believe in the power of collaboration and work in partnership with public, private, and nonprofit organizations to support small businesses.</li>
+    </ul>
+
+    <p>We are proud of our heritage and our commitment to small businesses, and we are committed to continuing to support American entrepreneurs in their quest for success.</p>
+
+    <p>To learn more about our programs and services, please explore our website or contact us directly.</p>
+</div>
+</div>
 
 {% endblock content %}

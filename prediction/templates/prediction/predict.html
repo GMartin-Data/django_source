@@ -18,15 +18,13 @@
         <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-2xl xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <div class="flex flex-col items-center justify-self-center justify-center justify-items-center content-center items-center self-center">
-                <a href="#" class="mb-6 font-semibold dark:text-white text-center">
+                <a href="#" class="mb-6 font-semibold dark:text-white text-center text-white">
                     {% comment %} <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo"> {% endcomment %}
-                    {% include "includes/logo_wm.html"  %}
-                    Loan Approval AI    
-                </a>
-                </div>
+                    {% include "includes/logo_sba.html"  %}</a>
+                
         <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl dark:text-white text-center text-sba-dark-blue ">
-                    Bitch better have my money
-                </h1>
+            Loan Repayment Simulation
+                </h1></div>
                 <form class="space-y-4 md:space-y-6" method="post">
                     {% csrf_token %}
                     <div>
@@ -96,7 +94,7 @@
                         <div class="flex items-start">
                         </div>
                     </div>
-                    <button type="submit" class="w-full text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Predict</button>
+                    <button type="submit" class="w-full text-white  bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"><h1 class="text-m font-bold leading-tight tracking-tight md:text-xl dark:text-white text-center text-sba-dark-blue ">Predict</h1></button>
                 </form>
             </div>
         </div>
