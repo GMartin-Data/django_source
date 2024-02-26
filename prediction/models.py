@@ -4,7 +4,7 @@ from .enums import *
 
     
 class LoanApplication(models.Model):
-    city = models.CharField(max_length=50, null=False, blank=False)
+    # city = models.CharField(max_length=50, null=False, blank=False)
     state = models.CharField(max_length=2, choices=USState.choices(), null=False, blank=False)
     bank = models.CharField(max_length=50, null=False, blank=False)
     bank_state = models.CharField(max_length=2, choices=USState.choices(), null=False, blank=False)
