@@ -3,5 +3,5 @@ from prediction import views
 
 
 urlpatterns = [
-    path('', views.predict, name='predict'),
+    path('', views.predict_api_page, name='predict'),
 ]
