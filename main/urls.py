@@ -1,5 +1,4 @@
 from django.urls import path, include
-
 from . import views
 from project import *
 
@@ -12,5 +11,7 @@ urlpatterns = [
     path('predict/', include('prediction.urls'), name="pred"),
     path('eda/', views.eda, name="eda"),
     path('model/', views.model, name="model"),
-    path('predict/', views.predict_page, name="predict")
+    path('predict/', views.predict_page, name="predict"),
+    path('', views.graphique_interactif, name="graphique_interactif"),
+    path('', views.custom_logout, name="custom_logout")
 ]

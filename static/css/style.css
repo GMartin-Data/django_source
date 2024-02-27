@@ -59,3 +59,8 @@ h2 {
     font-weight: 600;
     font-style: normal;
   }
+
+
+.aboutus {
+    max-height: 93vh;
+}

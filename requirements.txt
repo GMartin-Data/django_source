@@ -3,3 +3,5 @@ django-dotenv<2
 django-livereload-server<1
 django-widget-tweaks<2
 requests<3
+plotly<5
+pandas<2

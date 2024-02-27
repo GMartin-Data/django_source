@@ -2,6 +2,57 @@
 
 {% block content %}
 
-<h1>Data Analysis</h1>
+{% load static %}
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script>
+    path_data = "main/cleandata.csv"
+    data = pd.read_csv(path_data)
+    data.State = data.State.dropna()
+    data.ApprovalYear = data.ApprovalYear.dropna()
+    data["SBA_Appv"] = data["SBA_Appv"].dropna()
+    data = data.groupby(['State', 'ApprovalYear'],).sum('SBA_Appv').sort_values(by='ApprovalYear', ascending=True).reset_index()
+    data = data[["State", "SBA_Appv", 'ApprovalYear']]
+    data = data.rename(columns={'SBA_Appv':'Amount guaranteed by SBA'})
+
+    fig = px.choropleth(data,
+                        locations='State',
+                        locationmode='USA-states',
+                        scope="usa",
+                        color='Amount guaranteed by SBA',
+                        hover_name = 'State',
+                        # hover_data = 'Amount guaranteed by SBA',
+                        animation_frame='ApprovalYear',
+                        color_continuous_scale='viridis',
+                        title='AMOUNT OF LOANS GUARANTEED BY SBA TO EACH STATE OVER TIME')
+    # fig.update_geos(fitbounds="locations", visible=False)
+
+    fig.update_layout(width=800, height=600)
+    {% comment %} fig.show() {% endcomment %}
+
+    graph_interactif = py.plot(fig, filename='graphique_interactif.html')
+    Plotly.newPlot('graph-container', fig);
+    window.onload = loadGraph;
+</script>
+
+
+
+
+
+
+<div class="flex flex-col justify-center align-center items-center">
+    <h3>jozzdkkdzekzẑfkêzflẑef</h3>
+    {% comment %} <iframe src="{% url 'graphique_interactif' %}" class="mt-500"></iframe> {% endcomment %}
+    <div id="graph-container">
+        {{ graph_html | safe }}
+    </div>
+    <h3>jozzdkkdzekzẑfkêzflẑef</h3>
+    <img src="{% static 'img/plot.png' %}" class="mt-500"/>
+    <h3>jozzdkkdzekzẑfkêzflẑef</h3>
+    <img src="{% static 'img/plot2.png' %}" class="mt-500"/>
+    </div>
+
+
 
 {% endblock content %}
