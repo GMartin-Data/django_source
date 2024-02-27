@@ -4,5 +4,5 @@ def global_context(request):
         "Link2": "Data Analysis",
         "Link3": "Machine Learning",
         "Link4": "Make Predictions",
-        "clicked": "text-white rounded px-2 bg-gray-800",
+        "clicked": "text-white rounded px-2 bg-sba-dark-blue",
     }

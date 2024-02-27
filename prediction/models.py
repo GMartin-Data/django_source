@@ -1,5 +1,5 @@
 from django.db import models
-
+import datetime
 from .enums import *
 
     
@@ -20,3 +20,6 @@ class LoanApplication(models.Model):
     low_doc = models.CharField(max_length=1, choices=YesNo.choices(), null=False, blank=False)
     gr_appv = models.FloatField(null=False, blank=False)
     sba_appv = models.FloatField(null=False, blank=False)
+    date = models.DateTimeField(auto_now_add=True)
+
+
