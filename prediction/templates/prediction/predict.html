@@ -28,65 +28,65 @@
                 <form class="space-y-4 md:space-y-6" method="post">
                     {% csrf_token %}
                     <div>
-                        <label for="state" class="block mb-2 text-sm font-medium dark:text-white text-sba-dark-blue">Select your state : </label>
-                        {{form.state|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:state"}}
+                        <label for="State" class="block mb-2 text-sm font-medium dark:text-white text-sba-dark-blue">Select your state : </label>
+                        {{form.State|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:State"}}
                     </div>
                     <div>
-                        <label for="bank" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Type the name of your bank : </label>
-                        {{form.bank|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"|attr:"placeholder:bank"}}
+                        <label for="Bank" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Type the name of your Bank : </label>
+                        {{form.Bank|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"|attr:"placeholder:Bank"}}
                     </div>
 
                     <div>
-                        <label for="bank_state" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Select the state of your bank : </label>
-                        {{form.bank_state|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:bank_state"}}
+                        <label for="BankState" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Select the state of your bank : </label>
+                        {{form.BankState|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:BankState"}}
                     </div>
                     <div>
-                        <label for="naics" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Select your business sector : </label>
-                        {{form.naics|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:naics"}}
+                        <label for="NAICS" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Select your business sector : </label>
+                        {{form.NAICS|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:NAICS"}}
                     </div>
                     <div>
-                        <label for="term" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Select the number of months : </label>
-                        {{form.term|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-text-sba-dark-blue focus:ring-2 focus:ring-text-sba-dark-blue focus:border-focus:outline-none focus:ring-2 focus:ring-text-sba-dark-blue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:term"}}
+                        <label for="Term" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Select the number of months : </label>
+                        {{form.Term|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-text-sba-dark-blue focus:ring-2 focus:ring-text-sba-dark-blue focus:border-focus:outline-none focus:ring-2 focus:ring-text-sba-dark-blue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:Term"}}
                     </div>
                     <div>
-                        <label for="new_exist" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Is your company new?</label>
-                        {{form.new_exist|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:new_exist"}}
+                        <label for="NewExist" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Is your company new?</label>
+                        {{form.NewExist|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:NewExist"}}
                     </div>
                     <div>
-                        <label for="no_emp" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">How many employees work in your company?</label>
-                        {{form.no_emp|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:no_emp"}}
+                        <label for="NoEmp" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">How many employees work in your company?</label>
+                        {{form.NoEmp|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:NoEmp"}}
                     </div>
                     <div>
-                        <label for="create_job" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">How many jobs do you plan to create?</label>
-                        {{form.create_job|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:create_job"}}
+                        <label for="CreateJob" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">How many jobs do you plan to create?</label>
+                        {{form.CreateJob|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:CreateJob"}}
                     </div>
                     <div>
-                        <label for="retained_job" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">How many employees do you plan to keep?</label>
-                        {{form.retained_job|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:retained_job"}}
+                        <label for="RetainedJob" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">How many employees do you plan to keep?</label>
+                        {{form.RetainedJob|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:RetainedJob"}}
                     </div>
                     <div>
-                        <label for="franchise" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Is your company franchised?</label>
-                        {{form.franchise|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:franchise"}}
+                        <label for="Franchise" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Is your company franchised?</label>
+                        {{form.Franchise|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:Franchise"}}
                     </div>
                     <div>
-                        <label for="urban_rural" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Is your company's geographical situation urban or rural?</label>
-                        {{form.urban_rural|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:urban_rural"}}
+                        <label for="UrbanRural" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Is your company's geographical situation urban or rural?</label>
+                        {{form.UrbanRural|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:UrbanRural"}}
                     </div>
                     <div>
-                        <label for="rev_line_cr" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Is your credit revolving?</label>
-                        {{form.rev_line_cr|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:rev_line_cr"}}
+                        <label for="RevLineCr" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Is your credit revolving?</label>
+                        {{form.RevLineCr|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:RevLineCr"}}
                     </div>
                     <div>
-                        <label for="low_doc" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Are you part of the LowDoc program?</label>
-                        {{form.low_doc|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:low_doc"}}
+                        <label for="LowDoc" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Are you part of the LowDoc program?</label>
+                        {{form.LowDoc|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:LowDoc"}}
                     </div>
                     <div>
-                        <label for="gr_appv" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Enter the gross amount of loan approved by bank</label>
-                        {{form.gr_appv|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:gr_appv"}}
+                        <label for="GrAppv" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Enter the gross amount of loan approved by bank</label>
+                        {{form.GrAppv|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:GrAppv"}}
                     </div>
                     <div>
-                        <label for="sba_appv" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Enter the gross amount of loan approved by SBA</label>
-                        {{form.sba_appv|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:sba_appv"}}
+                        <label for="Sba_Appv" class="block mb-2 text-sm font-medium text-sba-dark-blue dark:text-white">Enter the gross amount of loan approved by SBA</label>
+                        {{form.Sba_Appv|add_class:"bg-gray-50 border border-gray-300 text-sba-blue sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"|attr:"placeholder:Sba_Appv"}}
                     </div>
                     <div>
                     <div class="flex items-center justify-between">
